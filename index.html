@@ -16,6 +16,18 @@
             color: #333;
         }
 
+        /* 新增：圓形頭像樣式 */
+        .avatar {
+            width: 120px;               /* 可改為 80px / 150px */
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 12px auto;
+            border: 4px solid #fff;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
         /* 保留原本 container 的視覺樣式，但不垂直置中（輪播置頂） */
         .site-container {
             background: rgba(255,255,255,0.9);
@@ -121,13 +133,19 @@
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="pexels-adilgkkya-2668314.jpg" class="d-block w-100" alt="...">
+          <img src="/image/pexels-adilgkkya-2668314.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="pexels-chaitaastic-2093323.jpg" class="d-block w-100" alt="...">
+          <img src="/image/pexels-chaitaastic-2093323.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="pexels-dreamypixel-547115.jpg" class="d-block w-100" alt="...">
+          <img src="/image/pexels-dreamypixel-547115.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/image/pexels-kasuma-426894.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/image/pexels-pixabay-533937.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -143,6 +161,10 @@
     <!-- 主要內容區（獨立於輪播） -->
     <div class="site-container text-center">
         <h1>1113211014</h1>
+
+        <!-- 新增：圓形圖片（放在 1113211014 標題下方） -->
+        <img src="/image/下載.jpg" alt="我的頭像" class="avatar">
+
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
