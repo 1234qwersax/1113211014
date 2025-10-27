@@ -1,43 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Collection</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Alpha — Beta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <style>
-        h1, h3 { text-align: center; color: #aabdf0; margin-bottom: .75rem; }
-        .lead { color: #6c757d; }
-        .card-img-top { object-fit: cover; height: 320px; }
+        
+        body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; background: #fff; }
+        .hero { padding: 4rem 0; }
+        .site-title { font-weight: 700; letter-spacing: .05em; font-size: 2.4rem; }
+        .specialties .card { border: 1px solid #e6e6e6; }
+        .specialties .card img { height: 220px; object-fit: cover; }
+        .collection-grid .card img { height: 130px; object-fit: cover; }
+        .about-section { padding: 3rem 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .testimonials { padding: 3rem 0; }
+        .testimonial-card { border: 1px solid #e6e6e6; border-radius: .5rem; padding: 1.6rem; background-repeat: repeat; }
+        .testimonial-stars { letter-spacing: .12em; font-weight: 700; }
+        .see-more { white-space: nowrap; }
+
+        
+        .blog-section { padding: 3rem 0; }
+        .blog-section .card { border: 0; }
+        .blog-section .card img { height: 110px; object-fit: cover; display: block; width: 100%; border-radius: .25rem; }
+        .blog-section .post-title { margin-top: .6rem; font-size: .95rem; }
+        .blog-section .post-date { font-size: .8rem; color: #666; }
+        .page-divider { height: 1px; border-top: 1px solid #eee; margin-top: 2.5rem; }
+
+       
+        @media (max-width: 767.98px) {
+            .site-title { font-size: 1.6rem; }
+            .specialties .card img { height: 180px; }
+            .blog-section .card img { height: 90px; }
+        }
+
+       
+        .site-footer { border-top: 2px solid #e6e6e6; margin-top: 2rem; height: 0; }
     </style>
 </head>
 <body>
-<main class="container py-5">
-    <header class="text-center mb-4">
-        <h1 class="display-5">Collection</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas ut dolorum consequuntur, adipisci repellat! Eveniet commodi voluptatem voluptate, eum minima, in suscipit explicabo voluptatibus harum, quibusdam ex repellat eaque!</p>
-    </header>
+<main class="container">
 
-    <div class="row align-items-center g-4">
-        <div class="col-12 col-md-6">
-            <div class="card shadow-sm">
-                <img src="/image/下載.jpg" class="card-img-top" alt="主要商品照片">
-                <div class="card-body">
-                    <h5 class="card-title">Classic winter collection</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content. Replace with your real description.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section class="hero text-start mt-4">
+        <div class="row align-items-end">
+            <div class="col-md-8">
+                <h1 class="site-title display-5">Alpha Beta Gamma</h1>
+                <p class="lead">Apple Banana Cherry Date</p>
+            </div>
+            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <a href="#" class="btn btn-outline-secondary btn-sm see-more">Zeta →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialties my-5">
+        <h6 class="text-uppercase mb-3">One Two</h6>
+        <div class="row g-3">
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://picsum.photos/seed/cake1/600/400" class="card-img-top" alt="One">
+                    <div class="card-body py-2 px-2">
+                        <small class="d-block">Apple</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://picsum.photos/seed/wedding/600/400" class="card-img-top" alt="Two">
+                    <div class="card-body py-2 px-2">
+                        <small class="d-block">Banana</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://picsum.photos/seed/macarons/600/400" class="card-img-top" alt="Three">
+                    <div class="card-body py-2 px-2">
+                        <small class="d-block">Cherry</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <img src="https://picsum.photos/seed/cupcakes/600/400" class="card-img-top" alt="Four">
+                    <div class="card-body py-2 px-2">
+                        <small class="d-block">Date</small>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="col-12 col-md-6">
-            <h3>Overview</h3>
-            <p>Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at cursus imperdiet.</p>
-            <p>可在此加入更多說明或按鈕，行動裝置會自動向下堆疊。</p>
+  
+    <section class="about-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3>Echo</h3>
+                <p>Fig Grape Honey Ivy. Jackal Kite Lemon Mango.</p>
+                <a href="#" class="btn btn-outline-secondary btn-sm">Nova</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="https://picsum.photos/seed/shop/900/500" alt="Shop image" class="img-fluid rounded">
+            </div>
         </div>
-    </div>
-</main>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <section class="my-5">
+        <h6 class="text-uppercase mb-3">Sigma Collection</h6>
+        <div class="row collection-grid gx-3">
+            <div class="col-6 col-sm-4 col-md-2">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/seed/col1/400/300" class="card-img-top" alt="">
+                    <div class="pt-2 small">One<br><strong>£1</strong></div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/seed/col2/400/300" class="card-img-top" alt="">
+                    <div class="pt-2 small">Two<br><strong>£2</strong></div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/seed/col3/400/300" class="card-img-top" alt="">
+                    <div class="pt-2 small">Three<br><strong>£3</strong></div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/seed/col4/400/300" class="card-img-top" alt="">
+                    <div class="pt-2 small">Four<br><strong>£4</strong></div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <div class="card border-0">
+                    <img src="https://picsum.photos/seed/col5/400/300" class="card-img-top" alt="">
+                    <div class="pt-2 small">Five<br><strong>£5</strong></div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 d-flex align-items-center justify-content-md-center mt-2 mt-md-0">
+                <a href="#" class="btn btn-outline-secondary btn-sm">More</a>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section class="testimonials">
+        <h6 class="text-uppercase mb-4">Happy Folks</h6>
+        <div class="row gx-3">
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars mb-2">★★★★★</div>
+                    <p class="small mb-1">Alfa Bravo Charlie.</p>
+                    <div class="small text-muted mt-2">— Uno</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars mb-2">★★★★★</div>
+                    <p class="small mb-1">Delta Echo Foxtrot.</p>
+                    <div class="small text-muted mt-2">— Duo</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="testimonial-card h-100">
+                    <div class="testimonial-stars mb-2">★★★★★</div>
+                    <p class="small mb-1">Golf Hotel India.</p>
+                    <div class="small text-muted mt-2">— Tre</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="blog-section">
+        <div class="row align-items-start">
+            <div class="col-md-4">
+                <h6 class="text-uppercase mb-3">Bloggy</h6>
+                <p class="small">Juno Kilo Lima. Mike November Oscar. Papa Quebec Romeo.</p>
+                <a href="#" class="btn btn-outline-secondary btn-sm mt-2">Read</a>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row gx-3">
+                    <div class="col-6 col-sm-3">
+                        <div class="card border-0">
+                            <img src="https://picsum.photos/seed/blog1/400/300" alt="post 1">
+                            <div class="post-title small">Scone<br><span class="post-date">Jan 1, 2024</span></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                        <div class="card border-0">
+                            <img src="https://picsum.photos/seed/blog2/400/300" alt="post 2">
+                            <div class="post-title small">Tart<br><span class="post-date">Jan 2, 2024</span></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 mt-3 mt-sm-0">
+                        <div class="card border-0">
+                            <img src="https://picsum.photos/seed/blog3/400/300" alt="post 3">
+                            <div class="post-title small">Muffin<br><span class="post-date">Jan 3, 2024</span></div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-3 mt-3 mt-sm-0">
+                        <div class="card border-0">
+                            <img src="https://picsum.photos/seed/blog4/400/300" alt="post 4">
+                            <div class="post-title small">Slice<br><span class="post-date">Jan 4, 2024</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="page-divider"></div>
+    </section>
+</main>
+<hr>
+<footer class="site-footer" aria-hidden="true"></footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
