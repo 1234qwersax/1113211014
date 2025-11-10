@@ -22,7 +22,13 @@
         
         .blog-section { padding: 3rem 0; }
         .blog-section .card { border: 0; }
-        .blog-section .card img { height: 110px; object-fit: cover; display: block; width: 100%; border-radius: .25rem; }
+        .blog-section .card img {
+            height: 110px;
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            border-radius: .25rem;
+        }
         .blog-section .post-title { margin-top: .6rem; font-size: .95rem; }
         .blog-section .post-date { font-size: .8rem; color: #666; }
         .page-divider { height: 1px; border-top: 1px solid #eee; margin-top: 2.5rem; }
@@ -33,7 +39,6 @@
             .blog-section .card img { height: 90px; }
         }
 
-        /* 修改：頁面最底部實心黑線（佔滿全寬） */
         .site-footer {
             background: #000;
             height: 6px;
@@ -60,7 +65,7 @@
     <section class="specialties my-5">
         <h6 class="text-uppercase mb-3">One Two</h6>
         <div class="row g-3">
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3 col-md-1">
                 <div class="card">
                     <img src="/image/cinnamon-swirl-muffins.jpg"
                          class="card-img-top"
@@ -110,19 +115,19 @@
   
     <section class="about-section">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <h3>Echo</h3>
-                <p>Fig Grape Honey Ivy. Jackal Kite Lemon Mango.</p>
-                <a href="#" class="btn btn-outline-secondary btn-sm">Nova</a>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
-                     alt="店內展示甜點與人物"
-                     class="img-fluid rounded"
-                     onerror="this.onerror=null;this.src='https://via.placeholder.com/1200x800?text=No+Image';">
-            </div>
-        </div>
-    </section>
+            <div class="col-md-6 order-1 order-md-0 border border-5 border-primary p-5">
+                 <h3>Echo</h3>
+                 <p>Fig Grape Honey Ivy. Jackal Kite Lemon Mango.</p>
+                 <a href="#" class="btn btn-outline-secondary btn-sm">Nova</a>
+             </div>
+            <div class="col-md-6 text-center order-0 order-md-1">
+                 <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
+                      alt="店內展示甜點與人物"
+                      class="img-fluid rounded"
+                      onerror="this.onerror=null;this.src='https://via.placeholder.com/1200x800?text=No+Image';">
+             </div>
+         </div>
+     </section>
 
     <section class="my-5">
         <h6 class="text-uppercase mb-3">Sigma Collection</h6>
@@ -209,7 +214,7 @@
    
     <section class="blog-section">
         <div class="row align-items-start">
-            <div class="col-md-4">
+            <div class="col-md-4 order-1 order-md-0">
                 <h6 class="text-uppercase mb-3">Bloggy</h6>
                 <p class="small">Juno Kilo Lima. Mike November Oscar. Papa Quebec Romeo.</p>
                 <a href="#" class="btn btn-outline-secondary btn-sm mt-2">Read</a>
@@ -217,7 +222,7 @@
 
             <div class="col-md-8">
                 <div class="row gx-3">
-                    <div class="col-6 col-sm-3">
+                    <div class="col-6 col-sm-3 order-0 order-md-1">
                         <div class="card border-0">
                             <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
                                  alt="巧克力餅乾特寫"
